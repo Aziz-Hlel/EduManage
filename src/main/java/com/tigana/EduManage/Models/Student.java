@@ -2,6 +2,7 @@ package com.tigana.EduManage.Models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 @Table
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Student {
 
     @Id

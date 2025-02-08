@@ -52,7 +52,10 @@ public class SchoolService {
     }
 
     public SchoolDto getSchoolById(int id) {
-       School school=  schoolRepo.findById(id).orElseThrow(()-> new GeneralException(ResponseMessages.Common.SOMETHING_WRONG,HttpStatus.I_AM_A_TEAPOT));
+       School school=  schoolRepo.findById(id)
+               .orElseThrow(()->
+                       new GeneralException(ResponseMessages.Common.SOMETHING_WRONG,HttpStatus.I_AM_A_TEAPOT)
+               );
        return convertToDto(school);
     }
 
