@@ -34,22 +34,5 @@ public class School {
     public School() {}
 
 
-    // Getters & Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<LevelStat> getLevelStats() {
-        return levelStats;
-    }
-
-    public int getId() {
-        return id;
-    }
-
 
 }
