@@ -14,8 +14,9 @@ import java.util.Date;
 public class TransferredStudent {
 
     @Id
-    private Long id;
+    private int id;
 
+    private Long studentId;
     private String name;
     private String fatherName;
     private Date dob;
