@@ -24,6 +24,8 @@ public class Gov {
     @OneToMany(mappedBy = "gov", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<School> schools;
 
+    @OneToMany(mappedBy = "gov", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<TransferredStudent> transferredStudents;
 
     // CONSTRUCT
 
